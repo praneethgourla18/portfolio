@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { TypeAnimation } from 'react-type-animation'; // Import the new library
 import heroBg from "../assets/webdev.svg";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
@@ -16,7 +17,7 @@ const Home = () => {
         style={
           darkMode
             ? { backgroundImage: `url('${cloud}')`, backgroundSize: "cover" }
-            : { backgroundImage: `url('${cloudDark}'`, backgroundSize: "cover" }
+            : { backgroundImage: `url('${cloudDark}')`, backgroundSize: "cover" }
         }
       >
         <main
@@ -31,6 +32,17 @@ const Home = () => {
                 Hi, I am Praneeth
               </motion.span>
               <span className="my-2 block text-blue-500 z-0 lg:inline">
+                <TypeAnimation
+                  sequence={[
+                    'Front End Developer', 
+                    2000, 
+                    'Tech Enthusiast',
+                    2000, 
+                  ]}
+                  speed={50} 
+                  wrapper="span" 
+                  repeat={Infinity}
+                />
               </span>
             </h1>
 
