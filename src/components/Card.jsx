@@ -14,15 +14,15 @@ const Card = ({ title, imgUrl, repoLink, demoLink, description, workInProgress }
       }}
       className="bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-4 flex flex-col transition-transform duration-300 ease-in-out transform hover:scale-105"
     >
-      <a href={demoLink} target="_blank" rel="noopener noreferrer">
+      
         <img className="rounded-t-lg w-full h-36 object-cover" src={imgUrl} alt={title} />
-      </a>
+     
       <div className="flex-1 p-5 flex flex-col">
-        <a href={demoLink} target="_blank" rel="noopener noreferrer">
+       
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h5>
-        </a>
+      
         <p className="text-gray-700 dark:text-gray-300 line-clamp-2 overflow-hidden text-ellipsis whitespace-nowrap mb-2">
           {description}
         </p>

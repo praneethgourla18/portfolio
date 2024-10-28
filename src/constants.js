@@ -63,8 +63,8 @@ export const projectsData = [
     title: "Netflix GPT",
     description: "GPT Powered Search in Netflix!",
     repoLink: "https://github.com/yourusername/project1",
-    workInProgress: true,
-    demoLink: "https://yourproject1liveurl.com",
+    workInProgress: false,
+    demoLink: "https://cinema-gpt.netlify.app/",
     imageUrl: netflixGptImage,
   },
   {
